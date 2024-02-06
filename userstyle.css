@@ -1,0 +1,461 @@
+/* ==UserStyle==
+@name           GLPI Forum Dark Theme
+@namespace      github.com/cconard96/glpi-forum-dark-theme
+@version        1.0.0
+@description    Dark theme for the GLPI Community Forum
+@author         Curtis Conard
+==/UserStyle== */
+
+@-moz-document domain("forum.glpi-project.org") {
+    :root {
+        --bg-color: #000000;
+        --text-color: #cfcfcf;
+        --content-bg-color: #181818;
+        --content-color: #cfcfcf;
+        --header-bg-color: #272727;
+        --footer-bg-color: #272727;
+        --footer-color: #cfcfcf;
+        --link-color: #496bb6;
+    }
+
+    .pun .postlink {
+        background: #FEC95C;
+    }
+
+    .pun .postlink:hover {
+        opacity: .9;
+        box-shadow: 0px 1px 1px #999;
+    }
+
+    .pun .postlink a, .pun .postlink a:link, .pun .postlink a:visited {
+        color: #8f5a0a;
+    }
+
+    #punindex td.tc2, #punindex td.tc3, #punindex td.tcr, .pun #vf td.tc2, .pun #vf td.tc3,
+    .pun #vf td.tcr, #punindex td.tcl div.forumdesc, #punindex td.tcl .modlist, .pun #vf td.tcl span {
+        color: #6d6d6d;
+    }
+
+    .pun .icon {
+        background: var(--bg-color);
+        color:#bbbbbb;
+    }
+
+    /*****************************************************************
+    PROFILES (+ ADMIN MENU)
+    *****************************************************************/
+
+    /* Profile / Admin
+    ----------------------------------------------------------------*/
+
+    html, body, .pun {
+        background: var(--bg-color) !important;
+        color: var(--text-color) !important;
+    }
+
+    .pun .punwrap {
+        background: #3A5693;
+        border-color: #3A5693;
+        color: #fff;
+    }
+
+    #brdtitle #brddesc, .pun .pagepost, #brdstats #onlinelist, #brdfooter #searchlinks, #brdfooter #modcontrols,
+    #punmaint h2, #punredirect h2, #adminconsole .submittop, .pun #debugtime, .pun .pagelink a, .pun .pagelink * {
+        border-color: #b9c5ce;
+    }
+
+
+    .pun a, .pun a:link, .pun a:visited {
+        color: var(--link-color);
+    }
+
+    .pun a:hover, .pun a:active, .pun a:focus {
+        color: var(--link-color);
+    }
+
+    .pun .postmsg .postimg a:link img, .pun .postmsg .postimg a:visited img {
+        border-color: #22538a;
+    }
+
+    .pun .postmsg .postimg a:hover img, .pun .postmsg .postimg a:active img, .pun .postmsg .postimg a:focus img {
+        border-color: #687588;
+    }
+
+    /* Primary Navigation
+    ----------------------------------------------------------------*/
+
+    #brdmenu {
+    background:#3A5693;
+    }
+
+    #brdmenu a, #brdmenu a:link, #brdmenu a:visited {
+
+        border-color: #292e35;
+        color: #ffffff;
+    }
+
+    #brdmenu a:hover, #brdmenu a:active, #brdmenu a:focus {
+        background: #8BAADA;
+        border-color: #fff;
+        border-radius:3px;
+        color: #fff;
+    }
+
+    /* Main Tables
+    ----------------------------------------------------------------*/
+
+    .pun .blocktable .box {
+        background: var(--bg-color);
+        border: none !important;
+    }
+
+    #punindex .blocktable h2, .pun #vf h2 {
+        color: var(--text-color);
+    }
+
+    #adminconsole fieldset th, #adminconsole fieldset td {
+        background: #f6f9fc;
+        border-color: #dfe6ee;
+    }
+
+    .pun #users1 h2 {
+        background: #fff;
+    }
+
+    .pun .blocktable td {
+        border-color: #dfe6ee;
+    }
+
+    .pun .blocktable th {
+        background: var(--header-bg-color);
+        border-color: #F1F0F0;
+        color: var(--text-color);
+    }
+
+    .pun .blocktable td.tcl span.stickytext {
+        color: #3399CC;
+    }
+
+    /* Main Posts
+    ----------------------------------------------------------------*/
+
+    .pun .blockpost {
+        background: var(--content-bg-color);
+        border: none;
+    }
+
+    .pun .blockpost h2 {
+        background: var(--header-bg-color);
+        border-color: var(--header-bg-color);
+        color: var(--text-color) !important;
+    }
+    .pun .blockpost h2 a {
+        color: var(--text-color);
+    }
+    .pun .blockpost .postbody, .pun .blockpost .postfoot {
+        background: var(--content-bg-color);
+        border: none;
+    }
+
+    .pun .blockpost .postfootright li {
+        color: #fcfdfe;
+    }
+
+    .pun .postmsg, #punhelp code, #punhelp samp {
+        color: var(--content-color);
+    }
+
+    .pun .postsignature, .pun .postmsg .postedit {
+        color: #566579;
+    }
+
+    .pun .quotebox {
+        background: #f8f9f0;
+        border-color: #7aadbd;
+        color: #566579;
+    }
+
+    .pun .quotebox cite {
+        color: #6c7a89;
+    }
+
+    .pun .codebox, #punhelp .codebox code {
+        background: #333;
+        color: #fff;
+    }
+
+    .pun .postmsg hr {
+        background: #b9c5ce;
+    }
+
+    .pun .postmsg ins, #punhelp samp ins {
+        background-color: #ff0;
+    }
+
+    /* Main Forms + Profile
+    ----------------------------------------------------------------*/
+
+    .pun .blockform .box, #adstats, #adintro, #adalerts, #postpreview, #posterror {
+        border: none;
+        background: var(--content-bg-color);
+    }
+
+    #punmisc #rules .box, #punhelp .box {
+        border: none;
+        background: var(--content-bg-color);
+    }
+
+    .pun #quickpost h2, #punpost .blockform h2, #punedit .blockform h2, #posterror h2,
+    #pundelete .blockform h2 {
+        background: var(--content-bg-color);
+        color: var(--text-color);
+    }
+
+    .pun .forminfo {
+        background: var(--content-bg-color);
+        border: none;
+    }
+
+    #puninstall form#install .forminfo {
+        background: #44699c;
+        color: #fff;
+    }
+
+    .pun #posterror .error-info, .pun #adalerts p {
+        background: #ffffe1;
+        border-color: #dfe6ee;
+    }
+
+    #puninstall form#install .error-info {
+        background: #ffffe1;
+        border-color: #dfe6ee;
+        color: #333;
+    }
+
+    .pun .infldset, #adintro .inbox, #adstats .inbox {
+        background: var(--content-bg-color);
+        border: none;
+    }
+    
+    .pun .infldset.txtarea textarea {
+        background: var(--content-bg-color);
+        border: 1px solid var(--text-color);
+        color: var(--text-color);
+    }
+
+    .pun label, .pun legend, #adminconsole fieldset th {
+        color: #6c7a89;
+    }
+
+    .pun fieldset p {
+        border-color: #b9c5ce;
+    }
+
+    .pun .blockmenu ul, .pun .blockmenu li {
+        border-color: #b9c5ce;
+    }
+
+    .pun .blockmenu a:hover, .pun .blockmenu a:active, .pun .blockmenu a:focus {
+        background: #ffffe6;
+    }
+
+    .pun .blockmenu .isactive a:link, .pun .blockmenu .isactive a:visited {
+        color: #333;
+        background: #f6f9fc;
+    }
+
+    .pun #viewprofile .box {
+        border-color: #b9c5ce #d9e1e7;
+        background: #fff;
+    }
+
+    .pun #viewprofile dt, #adstats dt {
+        color: #6c7a89;
+    }
+
+    .pun #viewprofile dl, .pun #viewprofile dd, #adstats dl, #adstats dd {
+        border-color: #dfe6ee;
+    }
+
+    #adminconsole fieldset td.nodefault {
+        background: #d59b9b;
+    }
+
+    .pun .multiselect {
+        color: #6c7a89;
+    }
+
+    .pun .checklist {
+        background: white;
+        border-color: #ccc;
+    }
+
+    /* Status Indicators
+    ----------------------------------------------------------------*/
+
+    .pun .icon:before {
+        font-family: "FontAwesome";
+        content: '\f0e6';
+        font-size: 40px;
+
+    }
+
+
+    .pun .iredirect .icon:before  {
+        font-family: "FontAwesome";
+        content: '\f064';
+        font-size: 40px;
+    }
+    div.icon.icon-new:before {
+        font-family: "FontAwesome";
+        content: '\f086';
+        font-size: 40px;
+    }
+    .pun .inew .icon:before {
+        font-family: "FontAwesome";
+        content: '\f086';
+        font-size: 40px;
+        color: #f3aa15;
+    }
+
+
+
+    /*CUSTOM CSS */
+    @font-face {
+    font-family: Roboto;
+     src: local("Roboto"),
+    url(./Glpi/Roboto.ttf);
+     }
+
+    .pun .blockpost dt strong a{
+        color: var(--text-color);
+    }
+    .pun #brdfooter #feedlinks span:before {font-family: "FontAwesome"; content: '\f09e';margin-right:5px;color: #8f5a0a;}
+    #brdtitle a{color:#fff;}
+    #announce {background: #FEC95C; color: #8f5a0a;}
+    #brdwelcome  {background:#1B2F62;padding:10px;color: #fff;}
+    #brdwelcome  a {color: #fff;}
+    .block_one {width:100%;}
+    div.box{padding:10px;}
+    #brdfooter.block {
+        background:var(--footer-bg-color);
+        color:var(--footer-color) !important;
+    }
+    #brdfooter.block span, #brdfooter.block a {
+        color:var(--footer-color) !important;
+    }
+    .block_content {padding:5px!important; background:var(--bg-color);border: none !important;margin-left:auto!important;margin-right:auto!important; margin-top: 7px!important;}
+     /* NAVBAR */
+     nav {
+      background-color: #3A5693;
+      color: #FFF;
+    }
+    nav a {
+      color: #eee;
+    }
+    nav a:hover {
+
+        color: #FFF;
+    }
+    nav li:hover {
+      background-color: #434A54;
+        color: #FFF;
+    }
+    nav a#openup {
+      display: none;
+    }
+
+    @media screen and (max-width: 480px) {
+      nav a {
+        background: #434A54;
+        border-bottom: 1px solid #434A54;
+      }
+      nav a:hover {
+      background-color: #434A54;
+        color: #FFF;
+      }
+      nav a#openup {
+        background-color: #434A54;
+      }
+    }
+
+    /* NAVBAR */
+
+
+    /* ADAPTIVE by Visman
+    ----------------------------------------------------------------*/
+
+    .pun .blockpost .postleft dd img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media only screen and (max-width: 1024px) {
+    .pun {
+        padding: 10px 20px;
+    }
+    }
+
+    @media only screen and (max-width: 960px) {
+    .pun {
+        padding: 10px;
+    }
+    #brddesc {display: none;}
+    }
+
+    @media only screen and (max-width: 800px) {
+    .pun {
+        padding: 5px;
+    }
+
+    .pun .punwrap {
+        padding: 18px 5px;
+    }
+
+    .pun .quotebox {
+        margin: 0.5em;
+        padding: 0 0.5em;
+    }
+
+    .pun .block2col .blockform, .pun .block2col .block {
+        margin-left: 13.5em;
+    }
+
+    .pun .inform {
+        padding: 0 5px;
+    }
+
+    .pun form .buttons {
+        padding-left: 21px;
+    }
+
+    #adintro, #adstats, #adalerts {
+        padding: 5px;
+    }
+
+    #brdwelcome .conl + .conr {
+        float: left;
+    }
+
+    #punedit .blockform h2, #punpost .blockform h2, #postpreview h2, #posterror h2, .pun #quickpost h2, .pun #reportform h2, #pundelete .blockform h2 {
+        padding: 10px 19px 4px 24px;
+    }
+    #brddesc {display: none;}
+    }
+
+
+    @media only screen and (max-width: 540px) {
+        .pun .blockpost .postleft {
+            background-color: #fff; /* #565656; */
+        }
+    }
+
+
+    /*  ADAPTIVE  */
+
+
+    ::selection {
+        background: #8cc152;
+        color: #ffffff;
+    }
+}
