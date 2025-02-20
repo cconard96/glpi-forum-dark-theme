@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           forum.glpi-project.org - 6/19/2023, 8:21:46 PM
-@namespace      github.com/openstyles/stylus
+@name           GLPI Forum Dark Theme
+@namespace      github.com/cconard96/glpi-forum-dark-theme
 @version        1.0.0
-@description    A new userstyle
-@author         Me
+@description    Dark theme for the GLPI Community Forum
+@author         Curtis Conard
 ==/UserStyle== */
 
 @-moz-document domain("forum.glpi-project.org") {
