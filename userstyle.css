@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           GLPI Forum Dark Theme
-@namespace      github.com/cconard96/glpi-forum-dark-theme
+@name           forum.glpi-project.org - 6/19/2023, 8:21:46 PM
+@namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description    Dark theme for the GLPI Community Forum
-@author         Curtis Conard
+@description    A new userstyle
+@author         Me
 ==/UserStyle== */
 
 @-moz-document domain("forum.glpi-project.org") {
@@ -170,9 +170,9 @@
     }
 
     .pun .quotebox {
-        background: #f8f9f0;
+        background: #2c3435;
         border-color: #7aadbd;
-        color: #566579;
+        color: #eaedf0;
     }
 
     .pun .quotebox cite {
@@ -180,7 +180,7 @@
     }
 
     .pun .codebox, #punhelp .codebox code {
-        background: #333;
+        background: #2c3435;
         color: #fff;
     }
 
